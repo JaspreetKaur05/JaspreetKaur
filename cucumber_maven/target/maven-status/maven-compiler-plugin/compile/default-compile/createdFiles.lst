@@ -1,0 +1,5 @@
+runner\Runner.class
+step_definations\Tshirt.class
+pages\ProccedToCheckout01.class
+pages\ProccedToCheckout02.class
+pages\TshrtLink.class
