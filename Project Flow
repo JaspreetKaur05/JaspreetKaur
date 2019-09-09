@@ -1,0 +1,44 @@
+open the project
+Go to src/test/java/runner/Runner.java.This file is used to run the project as a junit test.
+
+The project flow is as given:
+First the user clicks on the T-Shirt button and add the Tshirt To the cart.
+Then by clicking on check to proceed Sign in details are entered as below:
+UserName:- jaspreet.kaur123
+Password:-Ropar@1995
+
+Then the user confirms the address and selects the payment method as "Pay By Wire"
+and finally checks the order in the order history
+
+In the second scenario
+after entering the sign In details
+the user clicks on update and changes the first name
+
+
+This project contains:
+1. Feature file
+    this file writes the scenarios for bith the test cases
+    
+2. Step defination File as Tshirt.java
+    This file contains the defination of all the steps mwntioned in feature file
+   
+3. Runner class as Runner.java
+    This is the JUnit class which is used to run the project according to Cucumber Options
+    
+    
+4. Pages as Pages package in src folder
+    This package contains various java files as give below:
+    1.TshrtLink:-  This contains the selenium code for T_Shirt link click, hover and click on add to cart
+    2.ProccedToCheckout01,ProccedToCheckout02,ProccedToCheckout03:-  This contains the selenium code to click on confirm order
+    3.SignIn:  This contains the code for SignIn
+    4.BackOrders:- This contains the code to click on BackOrders
+    5.OrderHistory:-Checks for thje History of the order
+    6.Payment:- This contains the code to select the ayment method
+    7.UpdateName:- This contains the code to update the Firstname  
+   
+   
+   
+Improvements that could be considered to develop the framework :
+
+Integrating it with jenkins 
+
