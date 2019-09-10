@@ -51,13 +51,13 @@ public class Tshirt
 		driver.quit();
 	}
     
-	@Given("^User is on the Home Page of the AUT$")
+	@Given("^User is on the Home Page of the AUT$")//URL of the page
 	public void user_is_on_the_Home_Page_of_the_AUT() throws Exception 
 	{
 		driver.get("http://automationpractice.com/index.php");	    
 	}
 
-	@When("^User Selects the T-shirt$")
+	@When("^User Selects the T-shirt$")//T-Shirt Link
 	public void user_Selects_the_T_shirt() throws Exception
 	{
 		
@@ -85,13 +85,15 @@ public class Tshirt
 		new BackOrders(driver).backOrder();    
 	}
 
-	@Then("^The order is displayed in the order History$")
+	@Then("^The order is displayed in the order History$")//Checking order
 	public void the_order_is_displayed_in_the_order_History() throws Exception 
 	{
 	   Assert.assertTrue(new OrderHistory(driver).checkOrderPlaced()); 
 	}
 	
-	@When("^User selects the T-shirt$")
+	******************************************************************************************
+		
+	@When("^User selects the T-shirt$")//T-Shirt LInk
 	public void user_selects_the_T_shirt() throws Exception 
 	{
 		new TshrtLink(driver).TShirtClick();;	    
@@ -111,13 +113,13 @@ public class Tshirt
 		signin.SignIn1();
 	}
 
-	@Then("^User updates the first name$")
+	@Then("^User updates the first name$")//Updating name
 	public void user_updates_the_first_name() throws Exception 
 	{
 	    new UpdateClick(driver).update();
 	    name=new UpdateName(driver);
 	    name.changeName();
 	    name.clickSave();
-	   // Assert.assertTrue(name.checkName());
+	   
 	}
 }
